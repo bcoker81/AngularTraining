@@ -5,9 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProjectsModule } from './projects/projects.module';
+import { HomeContainerComponent } from './home/home-container/home-container.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeContainerComponent],
   imports: [BrowserModule, AppRoutingModule, ProjectsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]

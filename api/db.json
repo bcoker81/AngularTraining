@@ -13,12 +13,12 @@
     },
     {
       "id": 1,
-      "name": "Wisozk Group",
-      "description": "Centralized interactive application. Exercitationem nulla ut ipsam vero quasi enim quos doloribus voluptatibus.",
+      "name": "Tommy Timmerson",
+      "description": "This is a brief view of the side of his house!",
       "imageUrl": "assets/placeimg_500_300_arch1.jpg",
       "contractTypeId": 4,
       "contractSignedOn": "2012-08-06T21:21:31.419Z",
-      "budget": 91638,
+      "budget": "12378687",
       "isActive": true,
       "editing": false
     },

@@ -22,6 +22,16 @@ export class ProjectService {
 
   constructor(private http: HttpClient) {}
 
+  find(id: number): Observable<Project> {
+    const url = this.projectsUrl + id;
+    return this.http.get<Project>(url).pipe(
+      catchError((error: HttpErrorResponse) => {
+        console.error(error);
+        return throwError('an error occured loading the project.');
+      })
+    );
+  }
+
   put(project: Project): Observable<Project> {
     const url = this.projectsUrl + project.id;
     return this.http.put<Project>(url, project, httpOptions).pipe(
