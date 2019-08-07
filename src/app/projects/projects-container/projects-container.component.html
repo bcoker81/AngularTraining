@@ -1,3 +1,12 @@
 <h1>Projects</h1>
+<div *ngIf="loading" class="center-page">
+  <span class="spinner primary"></span>
+  <p>Loading...</p>
+</div>
+<div class="row">
+  <div *ngIf="errorMessage" class="card large error">
+    <p><span class="icon-alert inverse "></span> {{ errorMessage }}</p>
+  </div>
+</div>
 <app-project-list [projects]="projects" (saveListItem)="onSaveListItem($event)">
 </app-project-list>
